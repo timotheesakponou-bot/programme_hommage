@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hommage à Hilaire M. Locoh-Donou</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* VOICE: recueilli, sobre, élégant — un programme de cérémonie qu'on tient en main
+   IDEA: le livret imprimé remis à l'entrée, lu sur un téléphone
+   PICTURE: le déroulé lui-même, avec de grandes heures en marge
+   COLOUR and TYPE: blanc chaud, encre presque noire, un bordeaux discret ; Cormorant Garamond + Source Sans 3
+   LAYOUT: une colonne calme, en-tête, déroulé, programmes d'installation et de salutations */
+:root{color-scheme:light dark;--bg:light-dark(#fdfcfa,#141213);--ink:light-dark(#1d1a1b,#ece7e4);--soft:light-dark(#6c6467,#a59da0);--line:light-dark(#e6e0dd,#2c2729);--acc:light-dark(#7a2e3e,#d79aa7);--now:light-dark(#f6ecee,#2a1c20);--film:light-dark(#f4f1ee,#1c191a)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "Source Sans 3",system-ui,sans-serif;overflow-x:clip}
+.wrap{max-width:760px;margin:0 auto;padding:0 max(5vw,18px)}
+header{padding:clamp(40px,8vw,80px) 0 28px;text-align:center;border-bottom:1px solid var(--line)}
+.pre{font:italic 500 20px/1.3 "Cormorant Garamond",Georgia,serif;color:var(--acc);margin:0 0 10px}
+h1{font:600 clamp(34px,7vw,52px)/1.05 "Cormorant Garamond",Georgia,serif;margin:0;text-wrap:balance}
+.orn{display:block;margin:22px auto;width:120px;height:14px;color:var(--acc)}
+.when{margin:0;font-size:17px}
+.when b{font-weight:600}
+.where{margin:4px 0 0;color:var(--soft)}
+h2{font:600 28px/1.1 "Cormorant Garamond",Georgia,serif;margin:44px 0 6px}
+.sub{color:var(--soft);margin:0 0 18px;font-size:15px}
+ol{list-style:none;margin:0;padding:0}
+.it{display:grid;grid-template-columns:4.6em minmax(0,1fr);gap:0 16px;padding:16px 10px;border-top:1px solid var(--line);border-radius:6px}
+.it:last-child{border-bottom:1px solid var(--line)}
+.t{font:600 22px/1.1 "Cormorant Garamond",Georgia,serif;color:var(--acc);white-space:nowrap;padding-top:2px}
+.seq{font-weight:600;font-size:17px;margin:0}
+.who{margin:2px 0 0}
+.th{margin:4px 0 0;font:italic 500 19px/1.3 "Cormorant Garamond",Georgia,serif}
+.d{margin:6px 0 0;font-size:14px;color:var(--soft);white-space:nowrap}
+.film{background:var(--film)}
+.film .seq::after{content:" · projection";font-weight:400;color:var(--soft)}
+.it.now{background:var(--now);box-shadow:inset 3px 0 0 var(--acc)}
+.badge{display:inline-block;margin-left:8px;font-size:13px;font-weight:600;color:var(--acc);border:1px solid var(--acc);border-radius:99px;padding:0 8px;vertical-align:2px}
+.box{display:grid;gap:10px}
+.m{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 16px;padding:12px 0;border-top:1px solid var(--line)}
+.m:last-child{border-bottom:1px solid var(--line)}
+.m p{margin:0}
+.m .k{font-weight:600}
+.m .v{color:var(--soft);grid-column:1}
+.m .du{grid-row:1;grid-column:2;color:var(--soft);font-size:14px;white-space:nowrap}
+.dl{display:inline-flex;align-items:center;gap:10px;margin-top:22px;min-height:48px;padding:12px 24px;border-radius:99px;background:var(--acc);color:var(--bg);font-weight:600;font-size:16px;text-decoration:none}
+.dl:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.dl svg{width:20px;height:20px}
+footer{text-align:center;color:var(--soft);font-size:14px;padding:48px 0 56px}
+@media(max-width:480px){.it{grid-template-columns:3.9em minmax(0,1fr);gap:0 12px;padding:14px 6px}.t{font-size:20px}}
+@media(prefers-reduced-motion:no-preference){.it.now{transition:background .4s}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <p class="pre">Cérémonie d'hommages à</p>
+  <h1>Hilaire M. Locoh-Donou</h1>
+  <svg class="orn" viewBox="0 0 120 14" aria-hidden="true"><path d="M0 7h48M72 7h48" stroke="currentColor" stroke-width="1"/><path d="M60 1l6 6-6 6-6-6z" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="60" cy="7" r="1.6" fill="currentColor"/></svg>
+  <p class="when"><b>Mercredi 25 novembre 2026</b> · 18h00</p>
+  <p class="where">Amphithéâtre du Centre Agora Senghor</p>
+  <a class="dl" href="programme.pdf" download="Programme_Hommage_Hilaire_Locoh-Donou.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>Télécharger le programme (PDF)</a>
+</header>
+
+<h2>Déroulé de la soirée</h2>
+<p class="sub">De 18h00 à 21h00</p>
+<ol id="prog"></ol>
+
+<h2>Les 30 minutes d'installation</h2>
+<p class="sub">18h00 – 18h30</p>
+<div class="box">
+  <div class="m"><p class="k">Musique hommage – Chanson des élèves de Hilaire</p><p class="v">Il aimait son village</p><p class="du">3 min</p></div>
+  <div class="m"><p class="k">Vidéo de l'Ordre National des Architectes du Togo</p><p class="v">Témoignages des confrères architectes</p><p class="du">5 min</p></div>
+  <div class="m"><p class="k">Musique de fond pendant l'installation</p><p class="v">Ray Charles, Top 10 Songs</p><p class="du">13 min</p></div>
+  <div class="m"><p class="k">Message des enfants à leur grand-père</p><p class="v">Hilaire Locoh-Donou, décrit par ses petits-enfants</p><p class="du">10 min</p></div>
+</div>
+
+<h2>Les 30 minutes de salutations</h2>
+<p class="sub">20h30 – 21h00</p>
+<div class="box">
+  <div class="m"><p class="k">Musique hommage – Chanson des élèves de Hilaire</p><p class="v">Il aimait son village</p><p class="du">3 min</p></div>
+  <div class="m"><p class="k">Musique de fond</p><p class="v">Ray Charles, Top 10 Songs</p><p class="du">22 min</p></div>
+</div>
+
+<footer><a class="dl" href="programme.pdf" download="Programme_Hommage_Hilaire_Locoh-Donou.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>Télécharger le programme (PDF)</a><p>Merci de votre présence.</p></footer>
+</div>
+
+<script>
+{
+const P=[
+["18h00","Installation","Accueil & hôtesses","Hommage musical & messages des petits-enfants","30 min"],
+["18h30","Ouverture","Francis Dogo","Bienvenue, sens de la soirée, déroulé","4 min"],
+["18h34","Performance musicale","Folly Nedy","Chanson de Bella Bellow","5,5 min"],
+["18h40","Hommage du fils aîné","Etienne Locoh-Donou","« L'homme, le père, les valeurs de vie, l'au revoir »","13 min"],
+["18h53","Film 1 : Vie HLD","Segment audiovisuel : photos et musique","« Débuts, famille, architecture et notoriété »","5,5 min",1],
+["18h58","Les compagnons intimes","Victor Ehe","« Le frère adoptif, compagnon rotarien »","7 min"],
+["19h03","Les amis de l'humanisme","Jean Degli","« Le petit frère en exil »","7 min"],
+["19h10","Le fils d'un ami de jeunesse","Koffi Klousseh","« Le rassembleur »","7 min"],
+["19h17","Film 2 : Vie HLD","Segment audiovisuel : photos et musique","« Deuxième carrière, les grands paris à 60 ans »","5,5 min",1],
+["19h22","Les confrères architectes","Alain Kumodzi","« L'élève devenu successeur »","7 min"],
+["19h30","Les employés d'Eda Oba","Rita Ognado","« L'entrepreneur, le chef d'entreprise »","7 min"],
+["19h37","Le fils de cœur","Calixte Barcola","« De la maison à Eda Oba »","7 min"],
+["19h44","Vidéo : Hilaire qui parle","Segment audiovisuel : vidéo montage","« Hilaire dans ses mots »","9,5 min",1],
+["19h53","Hommage d'un fils","David Locoh-Donou","« Le père, l'enseignant »","7 min"],
+["20h00","Hommage de la petite sœur","Antou Locoh-Donou","« L'homme solitaire, Eda + refrain chanté »","6 min"],
+["20h06","Film 3 : Vie HLD","Segment audiovisuel : photos et musique","« Vieillesse et fin de vie »","5 min",1],
+["20h11","Les petits-enfants","Maïlys Norman Locoh","« Zou Papa, le grand-père »","7 min"],
+["20h18","Hommage d'une fille","Nathalie Locoh-Donou","« Le père, et la musique »","8,5 min"],
+["20h26","Clôture","Francis Dogo","« Les enfants de la maison ; programme des obsèques »","3 min"],
+["20h30","Salutations de la famille","Hôtesses & sécurité","Brèves salutations de la famille & sortie du public","30 min"]
+];
+const ol=document.getElementById('prog');
+ol.innerHTML=P.map((r,i)=>`<li class="it${r[5]?' film':''}" id="s${i}"><div class="t">${r[0]}</div><div><p class="seq">${r[1]}</p><p class="who">${r[2]}</p><p class="th">${r[3]}</p><p class="d">${r[4]}</p></div></li>`).join('');
+const mins=P.map(r=>{const [h,m]=r[0].split('h');return +h*60+ +m});
+const mark=()=>{
+  const n=new Date(); // Lomé = UTC+0
+  for(const el of ol.querySelectorAll('.now'))el.classList.remove('now');
+  for(const b of ol.querySelectorAll('.badge'))b.remove();
+  if(n.getUTCFullYear()!==2026||n.getUTCMonth()!==10||n.getUTCDate()!==25)return;
+  const c=n.getUTCHours()*60+n.getUTCMinutes();
+  if(c<mins[0]||c>=21*60)return;
+  let i=0;while(i+1<mins.length&&c>=mins[i+1])i++;
+  const el=document.getElementById('s'+i);el.classList.add('now');
+  const b=document.createElement('span');b.className='badge';b.textContent='En cours';
+  el.querySelector('.seq').appendChild(b);
+};
+mark();const tm=setInterval(mark,30000);
+}
+</script>
+</body>
+</html>
